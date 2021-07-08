@@ -1,0 +1,74 @@
+categories:
+- Microservice
+- Monitoring
+labels:
+org: sainihimanshu983
+category: Microservice
+io.cattle.role: project
+questions:
+- variable: hostname
+  required: true
+  default: "demo"
+  type: string
+  label: "Host Node Name"
+  description: "SAMPLE: k3snodename"
+  group: "Host Configuration"
+- variable: kubeapi
+  required: true
+  default: "10.0.0.4:6443"
+  type: string
+  label: "Kubernetes API server URL"
+  description: "SAMPLE: k8s-master-hostname:6443"
+  group: "Host Configuration"
+
+# Registry
+- variable: registry.show
+  default: true
+  type: boolean
+  required: true
+  label: "Private Registry"
+  group: "Registry"
+  show_subquestion_if: true
+  subquestions:
+  - variable: global.image.pullSecret
+    required: true
+    default: "demo001"
+    type: string
+    label: "Registry Secret Name"
+    description: "NOTE: Create registry secret in namespace first! Leave empty for local/public images."
+    group: "Registry"
+  - variable: global.image.Registry
+    required: true
+    default: "demo001.azurecr.io"
+    type: string
+    label: "Registry Name"
+    description: "SAMPLE: abc.azurecr.io"
+    group: "Registry"
+
+# rabbit-mq
+- variable: rabbit-mq.rabbitMQ.image
+  required: true
+  default: "rabbitmq-infrastructure"
+  type: string
+  label: "Image Repository"
+  group: "Rabbit MQ"
+- variable: rabbit-mq.rabbitMQ.tag
+  default: ""
+  type: string
+  label: "Tag Version"
+  group: "Rabbit MQ"
+- variable: rabbit-mq.rabbitMQ.replicaCount
+  required: true
+  default: 1
+  type: int
+  label: "Replicas"
+  group: "Rabbit MQ"
+- variable: rabbit-mq.rabbitMQ.type
+  default: "ClusterIP"
+  type: enum
+  label: "Service Type"
+  group: "Rabbit MQ"
+  options:
+  - "ClusterIP"
+  - "NodePort"
+  - "LoadBalancer"

@@ -1,0 +1,23 @@
+# ChartMuseum
+
+[![GitHub Actions status](https://github.com/helm/chartmuseum/workflows/build/badge.svg)](https://github.com/helm/chartmuseum/actions?query=workflow%3Abuild)
+[![Go Report Card](https://goreportcard.com/badge/github.com/helm/chartmuseum)](https://goreportcard.com/report/github.com/helm/chartmuseum)
+[![GoDoc](https://godoc.org/github.com/helm/chartmuseum?status.svg)](https://godoc.org/github.com/helm/chartmuseum)
+
+<p align="center"><img align="center" src="https://raw.githubusercontent.com/helm/chartmuseum/main/logo2.png"></p><br/>
+
+*ChartMuseum* is an open-source **[Helm Chart Repository](https://helm.sh/docs/topics/chart_repository/)** server written in Go (Golang), with support for cloud storage backends, including [Google Cloud Storage](https://cloud.google.com/storage/), [Amazon S3](https://aws.amazon.com/s3/), [Microsoft Azure Blob Storage](https://azure.microsoft.com/en-us/services/storage/blobs/), [Alibaba Cloud OSS Storage](https://www.alibabacloud.com/product/oss), [Openstack Object Storage](https://developer.openstack.org/api-ref/object-store/), [Oracle Cloud Infrastructure Object Storage](https://cloud.oracle.com/storage), [Baidu Cloud BOS Storage](https://cloud.baidu.com/product/bos.html), [Tencent Cloud Object Storage](https://intl.cloud.tencent.com/product/cos), [Netease Cloud NOS Storage](https://www.163yun.com/product/nos), [DigitalOcean Spaces](https://www.digitalocean.com/products/spaces/), [Minio](https://min.io/), and [etcd](https://etcd.io/).
+
+Works as a valid Helm Chart Repository, and also provides an API for uploading charts.
+
+<img width="120" align="right" src="https://github.com/golang-samples/gopher-vector/raw/master/gopher-side_color.png">
+<img width="40" align="right" src="https://github.com/golang-samples/gopher-vector/raw/master/gopher-side_color.png">
+
+Powered by some great Go technology:
+- [helm/helm](https://github.com/helm/helm) - for working with charts
+- [gin-gonic/gin](https://github.com/gin-gonic/gin) - for HTTP routing
+- [urfave/cli](https://github.com/urfave/cli) - for command line option parsing
+- [spf13/viper](https://github.com/spf13/viper) - for configuration
+- [uber-go/zap](https://github.com/uber-go/zap) - for logging
+- [chartmuseum/auth](https://github.com/chartmuseum/auth) - for auth
+- [chartmuseum/storage](https://github.com/chartmuseum/storage) - for multi-cloud storage

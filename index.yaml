@@ -1,0 +1,24 @@
+apiVersion: v1
+entries:
+  demo:
+  - apiVersion: v1
+    appVersion: 1.16.0
+    created: "2021-07-08T12:00:04.3742799+05:30"
+    description: Demo chart
+    digest: 96a751f0fb30ab1cd901b11cfa2f75a31afa4369b8d3402fa181c9e3cb148681
+    home: https://sainihimanshu983.github.io
+    icon: https://img.shields.io/badge/Author-sainihimanshu983-success
+    keywords:
+    - demo
+    - nginx
+    - rancher
+    - sainihimanshu983
+    maintainers:
+    - email: sainihimanshu983@gmail.com
+      name: Himanshu
+    name: demo
+    type: application
+    urls:
+    - https://sainihimanshu983.github.io/charts/demo/demo-0.1.0.tgz
+    version: 0.1.0
+generated: "2021-07-08T12:00:04.3732832+05:30"
