@@ -212,7 +212,7 @@ Please read the script and modify as per project requirements before using.
 #   * is only for help in automation.
 #   * does not replace developer efforts.
 #   * does not include all dev helm commands. 
-# This 
+#
 # =============================================
 # COMMANDS ARE EXECUTED IN SEQUNCE OF ARGUMENTS
 # =============================================
