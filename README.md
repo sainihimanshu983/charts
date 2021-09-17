@@ -11,7 +11,7 @@ This repository is for hosting the helm/rancher charts. For now, it is being use
 * [ChartMuseum on Docker](#chartmuseum-on-docker)
 * [Integrate ChartMuseum in Rancher](#integrate-chartmuseum-in-rancher)
 * [Create Chart](#create-chart) 
-* [Package Chart](#cackage-chart) 
+* [Package Chart](#package-chart) 
 * [Publish Chart](#publish-chart) 
 * [Update Chart](#update-chart) 
 * [Install Chart](#install-chart) 
@@ -303,7 +303,7 @@ done
 
 
 ## Alternative to ChartMuseum
-There are some teams who are working with SaaS or have limitations that restrict chartmuseum part of infra. For such teams, there is an alternative to host the charts as a file system. I have taken an example of gitHub here as it is the most common public repo in use. You can go with a file hosting infra such as filezilla of nginx as well.
+There are some teams who are working with SaaS or have limitations that restrict chartmuseum part of infra. For such teams, there is an alternative to host the charts as a file system. I have taken an example of gitHub here as it is the most common public repo in use. You can go with a file hosting infra such as filezilla or nginx as well.
 
 Helm hosting works on simple structure given below:
 * index.yaml
